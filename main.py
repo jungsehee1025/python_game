@@ -1,1 +1,6 @@
-print("파이썬 게임 시작")
+import classes
+
+a = classes.teacher()
+a.burgerking()
+a.teaching()
+a.kakaoting()
