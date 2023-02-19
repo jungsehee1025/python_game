@@ -16,3 +16,11 @@ class teacher:
         print("수업하는 중")
     def kakaoting(self):
         print("카카오톡")
+
+
+class burgerking:
+    hamburger = 10
+    wapper = 10
+    fried = 10
+    def selling(self):
+        print("판매 되었습니다")
