@@ -29,6 +29,12 @@ class Class:
         nameList = []
         for i in self.student:
             nameList.append(i.name)
-        print(f"{self.number}반 담임 선생님은 {self.teacher.name} 선생님이시고, 학생은 {nameList}가 있습니다")
+        print(f"{self.number}반 담임 선생님은 {self.teacher.name} 선생님이시고, 학생은 {nameList}가 있습니다.")
     def addStudent(self, student):
         self.student.append(student)
+    def mathavg(self):
+        mathscoreList = []
+        for i in self.student:
+            mathscoreList.append(i.math)
+        avg = sum(mathscoreList)/len(mathscoreList)
+        print(f"이 반의 수학 능력 평균은 {avg}입니다.")
