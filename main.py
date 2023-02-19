@@ -1,16 +1,9 @@
 import school
 
 a = school.Student("kim", 3)
-b = school.Student("lee", 2)
-c = school.Student("back", 2)
+mathTeacher = school.Teacher("lee", "수학")
+ban1 = school.Class(1, mathTeacher)
 
-a.greeting()
-b.greeting()
-c.greeting()
-
-
-mathTeacher = school.Teacher("kim", "수학")
-engTeacher = school.Teacher("lee", "영어")
-
-mathTeacher.greeting()
-engTeacher.greeting()
+ban1.introducing()
+ban1.addStudent(a)
+ban1.introducing()
